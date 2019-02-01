@@ -1,0 +1,65 @@
+{
+  "beans": {
+    "xmlns:context": "http://www.springframework.org/schema/context",
+    "xmlns": "http://www.springframework.org/schema/beans",
+    "xmlns:mvc": "http://www.springframework.org/schema/mvc",
+    "xsi:schemaLocation": "http://www.springframework.org/schema/beans          http://www.springframework.org/schema/beans/spring-beans.xsd                            http://www.springframework.org/schema/context                            http://www.springframework.org/schema/context/spring-context.xsd                            http://www.springframework.org/schema/mvc                            http://www.springframework.org/schema/mvc/spring-mvc.xsd",
+    "mvc:resources": {
+      "mapping": "static/**",
+      "location": "static/"
+    },
+    "context:component-scan": {
+      "base-package": "com.kwok.springmvc.controller"
+    },
+    "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
+    "mvc:annotation-driven": "",
+    "mvc:interceptors": {
+      "mvc:interceptor": {
+        "bean": {
+          "class": "com.kwok.springmvc.util.LoginInterceptor"
+        },
+        "mvc:mapping": [
+          {
+            "path": "/index"
+          },
+          {
+            "path": "/user/**"
+          },
+          {
+            "path": "/group/**"
+          }
+        ]
+      }
+    },
+    "bean": [
+      {
+        "property": [
+          {
+            "name": "prefix",
+            "value": "/WEB-INF/jsp/"
+          },
+          {
+            "name": "suffix",
+            "value": ".jsp"
+          }
+        ],
+        "id": "viewResolver",
+        "class": "org.springframework.web.servlet.view.InternalResourceViewResolver"
+      },
+      {
+        "property": [
+          {
+            "name": "maxUploadSize",
+            "value": "10485760"
+          },
+          {
+            "name": "defaultEncoding",
+            "value": "UTF-8"
+          }
+        ],
+        "id": "multipartResolver",
+        "class": "org.springframework.web.multipart.commons.CommonsMultipartResolver"
+      }
+    ]
+  }
+}

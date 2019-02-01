@@ -1,0 +1,93 @@
+{
+	"query" : {
+		"diagnostics" : {
+			"publiclyCallable" : "true",
+			"service-time" : "25",
+			"user-time" : "26",
+			"url" : {
+				"execution-start-time" : "0",
+				"execution-time" : "25",
+				"execution-stop-time" : "25",
+				"content" : "http://where.yahooapis.com/v1/continents;start=0;count=10"
+			},
+			"build-version" : "21978"
+		},
+		"yahoo:created" : "2011-10-11T08:40:23Z",
+		"xmlns:yahoo" : "http://www.yahooapis.com/v1/base.rng",
+		"yahoo:lang" : "en-US",
+		"yahoo:count" : "7",
+		"results" : {
+			"place" : [{
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/24865670",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "24865670",
+						"name" : "Africa"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/24865675",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "24865675",
+						"name" : "Europe"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/24865673",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "24865673",
+						"name" : "South America"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/28289421",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "28289421",
+						"name" : "Antarctic"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/24865671",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "24865671",
+						"name" : "Asia"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/24865672",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "24865672",
+						"name" : "North America"
+					}, {
+						"xmlns" : "http://where.yahooapis.com/v1/schema.rng",
+						"xml:lang" : "en-US",
+						"yahoo:uri" : "http://where.yahooapis.com/v1/place/55949070",
+						"placeTypeName" : {
+							"code" : "29",
+							"content" : "Continent"
+						},
+						"woeid" : "55949070",
+						"name" : "Australia"
+					}]
+		}
+	}
+}
